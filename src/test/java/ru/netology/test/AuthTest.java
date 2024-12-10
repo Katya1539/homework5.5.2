@@ -1,22 +1,19 @@
 package ru.netology.test;
 
 
-import org.graalvm.compiler.nodeinfo.InputType;
+import com.codeborne.selenide.Condition;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import com.codeborne.selenide.Selenide;
 
 import java.time.Duration;
 
-import static org.graalvm.compiler.nodeinfo.InputType.Condition;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 import static ru.netology.data.DataGenerator.Registration.getRegisteredUser;
 import static ru.netology.data.DataGenerator.Registration.getUser;
 import static ru.netology.data.DataGenerator.getRandomLogin;
 import static ru.netology.data.DataGenerator.getRandomPassword;
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
-
 
 public class AuthTest {
 

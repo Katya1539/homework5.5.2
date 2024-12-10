@@ -24,11 +24,11 @@ public class DataGenerator {
         private Registration() {
         }
 
-        public static RegistrationDto getUser(String status) {
-            return new RegistrationDto(getRandomLogin(), getRandomPassword(), status);
+        public static ru.netology.data.DataGenerator.RegistrationDto getUser(String status) {
+            return new ru.netology.data.DataGenerator.RegistrationDto(getRandomLogin(), getRandomPassword(), status);
         }
 
-        public static RegistrationDto getRegisteredUser(String status) {
+        public static ru.netology.data.DataGenerator.RegistrationDto getRegisteredUser(String status) {
             return ApiHelper.sendRequest(getUser(status));
         }
     }
